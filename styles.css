@@ -1,0 +1,53 @@
+.header {
+    grid-area: header;
+    background-color: grey;
+    place-items: center;
+    display:grid;
+
+}
+
+.left {
+    grid-area: left;
+    background-color: indianred;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.right {
+
+    grid-area: right;
+    background-color: lightseagreen;
+    padding: 20px;
+
+}
+
+.container {
+    gap: 10px;
+    height: 100vh;
+    display: grid;
+    grid-template:
+    "header header header" 150px
+    "left main right"  1fr /
+     1fr 1fr 1fr;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+p {
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding-left: 20px;
+
+}
+
+h2 {
+    font-size: 2rem;
+
+}
